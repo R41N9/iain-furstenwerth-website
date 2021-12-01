@@ -6,9 +6,9 @@ const cors = require("cors");
 const app = express();
 const port = 80;
 
-app.use(compression);
+app.use(compression());
 app.use(express.static(path.join(__dirname, "../dist")));
-app.use(cors);
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send();
