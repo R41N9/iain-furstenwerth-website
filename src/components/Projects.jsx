@@ -5,8 +5,11 @@ class Projects extends React.Component {
 
   render() {
     return (
+      // flexbox. all content-box class elements are 100% flex-basis in the mobile stylesheet, so they stack vertically instead of horizontally.
       <div id="projects" className="content-box">
+        {/* centered. h2 elements automatically have some margin, so it took no effort for all the spaces between the h2's and the content to be the same. */}
         <h2 id="projects-title">Projects</h2>
+        {/* flex basis 80% makes link-group class elements slightly smaller than the parent, but a ul automatically styles margin and padding on li's. so i added a margin around each link-group class element to keep it off the border. */}
         <div id="ss-group" className="link-group">
           <a id="ss-link" href="http://18.191.240.161:80/">Stacks &amp; Scales - Freelance</a>
           <ul id="ss-desc">
@@ -36,4 +39,5 @@ class Projects extends React.Component {
   }
 }
 
+// export component so other documents can import it
 export default Projects;
