@@ -1,4 +1,4 @@
-/* ---------------GLOBAL--------------- */
+/* ---------------GLOBAL/MAIN--------------- */
 
 html {
   background-color: #303030;
@@ -19,8 +19,6 @@ a:hover {
   color: antiquewhite;
   text-decoration: underline;
 }
-
-/* ---------------MAIN--------------- */
 
 #main {
   width: 100%;
@@ -44,6 +42,11 @@ a:hover {
   align-items: center;
   text-align: center;
   flex-flow: column wrap;
+}
+
+li {
+  margin: 5px;
+  text-align: start;
 }
 
 /* ---------------HEADER--------------- */
@@ -78,15 +81,10 @@ a:hover {
   margin: 10px;
 }
 
-li {
-  margin: 5px;
-  text-align: start;
-}
-
 /* ---------------BIO--------------- */
 
 #bio {
-  flex-basis: 31%;
+  flex-basis: 25%;
 }
 
 #bio > p {
@@ -99,6 +97,19 @@ li {
 }
 
 /* ---------------SKILLS--------------- */
+
+#skills {
+  flex-basis: 25%;
+}
+
+h3 {
+  font-size: 1.0625em;
+}
+
+#skills > ul {
+  align-self: flex-start;
+  padding-left: 28%;
+}
 
 /* ---------------LINKS--------------- */
 
