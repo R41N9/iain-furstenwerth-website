@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      (function createStylesLink() {
+        const stylesheet = document.createElement("link");
+        stylesheet.setAttribute("rel", "stylesheet");
+        if (screen.width >= 600) {
+          stylesheet.setAttribute("href", "./bigStyles.css");
+        } else {
+          stylesheet.setAttribute("href", "./smallStyles.css");
+        };
+        const head = document.getElementsByTagName("HEAD")[0];
+        head.appendChild(stylesheet);
+      }())
+    </script>
+    <meta name="viewport"
+       content="width=device-width">
+    <title>Iain Furstenwerth - Software Developer</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1 id="index-title">Iain Furstenwerth - Software Developer</h1>
+    </div>
+    <script async defer type="text/javascript" src="./bundle.js"></script>
+  </body>
+</html>

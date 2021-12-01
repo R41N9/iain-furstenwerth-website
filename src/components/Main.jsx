@@ -1,12 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./Header.jsx";
+import Projects from "./Projects.jsx";
+import Bio from "./Bio.jsx";
+import Footer from "./Footer.jsx";
 
 
 class Main extends React.Component {
 
   render() {
     return (
-      <div id="main">Hello from yourself!</div>
+      <div id="main">
+        <Header />
+        <div id="content-wrapper">
+          <Projects />
+          <Bio />
+        </div>
+        <Footer />
+      </div>
     )
   }
 }
