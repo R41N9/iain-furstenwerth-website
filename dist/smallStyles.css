@@ -1,0 +1,150 @@
+/* ---------------GLOBAL/MAIN--------------- */
+
+html {
+  background-color: #303030;
+  color: antiquewhite;
+}
+
+h2 {
+  font-size: 1.25em;
+  flex-basis: 100%;
+}
+
+a {
+  color: aqua;
+  text-decoration: none;
+}
+
+a:hover {
+  color: antiquewhite;
+  text-decoration: underline;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content-box {
+  border: 1px solid aqua;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column wrap;
+}
+
+li {
+  margin: 5px;
+  text-align: start;
+}
+
+/* ---------------HEADER--------------- */
+
+#header {
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#avatar {
+  border-radius: 50%;
+  width: 70%;
+  float: left;
+}
+
+#title-subtitle {
+  flex-basis: 100%;
+}
+
+#title {
+  font-size: 4em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#subtitle {
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* ---------------PROJECTS--------------- */
+
+#projects {
+  flex-basis: 100%;
+  float: left;
+}
+
+.link-group {
+  flex-basis: 80%;
+  margin: 10px;
+}
+
+/* ---------------BIO--------------- */
+
+#bio {
+  flex-basis: 100%;
+}
+
+#bio > p {
+  margin: 10px 10% 10px 10%;
+  text-align: start;
+}
+
+#bio-content-leisure {
+  padding-bottom: 5%;
+}
+
+/* ---------------SKILLS--------------- */
+
+#skills {
+  flex-basis: 100%;
+}
+
+h3 {
+  font-size: 1.0625em;
+}
+
+#skills > ul {
+  align-self: flex-start;
+  padding-left: 28%;
+}
+
+/* ---------------LINKS--------------- */
+
+#links {
+  flex-basis: 100%;
+  padding-bottom: 3%;
+}
+
+#links > a {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* ---------------FOOTER--------------- */
+
+footer {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+small {
+  font-size: .75em;
+}

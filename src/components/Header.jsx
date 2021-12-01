@@ -10,7 +10,10 @@ class Header extends React.Component {
     return (
       <div id="header">
         <img id="avatar" src="./imgs/website-avatar.png" alt="Iain Furstenwerth Avatar"/>
-        <h1 id="title">Iain Furstenwerth</h1>
+        <div id="title-subtitle">
+          <h1 id="title">Iain Furstenwerth</h1>
+          <h2 id="subtitle">Full Stack Developer</h2>
+        </div>
       </div>
     )
   }
