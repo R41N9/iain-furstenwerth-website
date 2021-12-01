@@ -2,15 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <!-- this function renders a stylesheet link according to screen size, with mobile or full size options -->
     <script type="text/javascript">
       (function createStylesLink() {
+        // create element and set ubiquitous attributes
         const stylesheet = document.createElement("link");
         stylesheet.setAttribute("rel", "stylesheet");
+        // check screen width
         if (screen.width >= 600) {
+          // add proper href
           stylesheet.setAttribute("href", "./bigStyles.css");
         } else {
           stylesheet.setAttribute("href", "./smallStyles.css");
         };
+        // render element
         const head = document.getElementsByTagName("HEAD")[0];
         head.appendChild(stylesheet);
       }())
@@ -20,9 +25,8 @@
     <title>Iain Furstenwerth - Software Developer</title>
   </head>
   <body>
-    <div id="root">
-      <h1 id="index-title">Iain Furstenwerth - Software Developer</h1>
-    </div>
+    <div id="root"></div>
+    <!-- webpack bundle -->
     <script async defer type="text/javascript" src="./bundle.js"></script>
   </body>
 </html>

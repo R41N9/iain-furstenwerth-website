@@ -4,9 +4,13 @@ class Skills extends React.Component {
 
   render() {
     return (
+      // flexbox, also not used here. i'm using the content-box class for other things as well, like border and margin.
       <div id="skills" className="content-box">
+        {/* centered */}
         <h2 id="skills-title">Skills</h2>
+        {/* centered */}
         <h3 id="front-end-title">Front End</h3>
+        {/* skills-list class elements are set to align-self (flexbox) flex-start to take them out of the align-items center set on the parent. i wanted the bullets to line up on the left instead of just centering every line. also added a padding-left to space them from the border */}
         <ul id="front-end" className="skills-list">
           <li id="js">Javascript (ES5 and ES6)</li>
           <li id="html">HTML5</li>
@@ -24,13 +28,13 @@ class Skills extends React.Component {
           <li id="rest">REST API</li>
         </ul>
         <h3 id="testing-deployment-title">Testing/Deployment</h3>
-        <ul id="testing-deployment">
+        <ul id="testing-deployment" className="skills-list">
           <li id="jest">Jest</li>
           <li id="mocha-chai">Mocha / Chai</li>
           <li id="aws">AWS: EC2</li>
         </ul>
         <h3 id="dev-tools-title">Developer Tools</h3>
-        <ul id="dev-tools">
+        <ul id="dev-tools" className="skills-list">
           <li id="vim">Vim</li>
           <li id="git">Git</li>
           <li id="npm">npm</li>
@@ -44,4 +48,5 @@ class Skills extends React.Component {
   }
 }
 
+// export component so that other documents can import it
 export default Skills;
